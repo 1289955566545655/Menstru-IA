@@ -1,0 +1,58 @@
+<!Doctype html>
+ <script type="text/javascript">
+    function somme() { 
+     let dateTexte = document.getElementById("date1").value; 
+     let dateDebut = new Date(dateTexte);
+     if (dateTexte === "") { 
+     alert("veuillez entrer la date des dernieres regles"); 
+     return;
+     }
+
+     let cycleTexte = document.getElementById("cyreg").value;
+     let cycle = parseInt(cycleTexte);
+     if (cycleTexte === "") { 
+     alert("veuillez entrer la duree du cycle"); 
+     return;
+     }
+
+     prochaineRegle = setDate(dateDebut.getDate() + cycle);
+     document.getElementById("prdate").innerHTML = prochaineRegle.tolocalDateString();
+
+     let ovulation = new Date(prochaineRegle - 14);
+     document.getElementById("procRegle").innerHTML = prochaineRegle.toLocalDateString(); //afficher sur la page
+     document.getElementById("ovu").innerHTML = ovulation.toLocalDateString();   
+
+    }
+ </script>
+
+ <head>
+ 	<title> MENSTRUIE IA </title>
+ 	<meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="MENSTRUIE.css">
+ </head>
+ <fieldset>
+   <body background="photo menstru.jpg">
+       <b><i><h1><marquee><font color="yellow"><u>Bienvenu dans ma page de calcul des menstruies</u></font></marquee></h1></i></b>
+    <div id="div1">	
+      <form>
+      	 <b><h2>salut! moi c'est MENSTRUIE IA et j'suis la pour t'aider a calculer tes mentruie alors on y vas...</h2></b><br>
+   	     Etrez la date de votre premier jour de menstruation de ce mois: <input type="date" name="dam" id="date1"><br><br>
+   	     Le cycle menstruel est le nombre de jour entre deux menstruie <font color="red"><u>Exemple:</u></font>28jours, 30 jours, 35 jours...<br><br>
+         Le type d'un cycle est le comportement de celui-ci. Pour un cycle regulier la valeur est statique(soit 22, 28, 30 jours ... chaque mois) et pour un cycle irregulier la valeur peut-etre 22 jours un mois, 30 un autre mois... puis 28 un autre.<br><br>
+
+         Si vous avez un cycle regulier entrez-le ici : <input type="text" name="cycle" id="cyreg"><br><br>
+         Sinon,
+         Entrez votre plus court cycle: <input type="number" name="cyirr" id="ppcy"><br><br>
+         Entrez votre plus long cycle : <input type="number" name="cyirr" id="plcy"><br><br>
+         si vous avez un retard pour le retour de vos regles,<br>
+         veuillez fournir la moyenne de vos derniers cycles: <input type="number" name="moydercycle" id="moyder"><br><br>
+         Et votre cycle precedent: <input type="number" name="cycleprecedent" id="cypre"><br><br>
+         cycle oublier ? Entrez votre jour d'ovulation dans l'actuel mois: <input type="number" id="Jd"><br><br>
+
+         <button type="button" id="envoyer" onclick="somme()"><b>Envoyer</b></button>  <button type="reset" id="annuler"><b>Annuler</b></button><br><br>
+         Votre prochaine regle est prevu pour le: <span id="procRegle">-</span><br><br> Votre jour d'ovulation sera le: <span id="ovu">-</span><br>
+      </form>
+    </div>
+   </body>
+ </fieldset>
+</html>
