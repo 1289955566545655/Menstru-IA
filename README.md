@@ -1,7 +1,17 @@
 Thanks you people to use my MENSTRUI IA!<br>
-So this IA is destinate to all girls who want to know their future ovulation date or their future Menstru.<br>
-To do this i had take three possibility so when a girl want to know their future mentrui or ovulation date,
-she just have to enter the needed information which correspond whith her case.<br>
-This is all i have to tell you people for the moment because i want this site to be more impressionant and attractive.<br>
-I think that you people will love so good using.<br>
-See you next time for the future version.<br>
+
+© 2025 – [Tchédji Takam Théophile]
+
+Tous droits réservés.
+
+Ce site et son contenu sont accessibles au public à des fins
+d'information et d'utilisation personnelle uniquement.
+
+Toute reproduction, modification, redistribution, extraction
+ou réutilisation partielle ou totale du contenu, du code ou
+des calculs est strictement interdite sans autorisation écrite
+préalable de l’auteur.
+
+Ainsi, ce site est destiné à toutes les filles vet femms sui souhaite nt connaître leur prochain début de règles ainsi que leur période d'ovulation.<br>
+Pour ce faire j'ai pris en compte trois cas possible ainsi toutes filles et femmes qui souhaitent utiliser cette page devront remplir les cases qui correspondent à leur cas pour une meilleure réponse.<br>
+Je souhaite que ce sote soit à la hauteur de vos attentes alors bonne utilisation .<br>
